@@ -1,3 +1,5 @@
+// I won't be adding unit tests to this file since it just represents a database.
+
 import fs from "fs";
 import path from "path";
 import type { Object } from "../types/interface";
