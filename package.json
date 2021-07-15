@@ -1,12 +1,11 @@
 {
-  "name": "objectmgr-api",
+  "name": "object-mgr-api",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "renatovalencia@gmail.com",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "node 'dist/server.js'",
+    "start": "tsc && node 'dist/server.js'",
     "build": "tsc",
     "start:dev": "npm run build:dev",
     "build:dev": "nodemon 'src/server.ts' --exec 'ts-node' src/server.ts -e ts,graphql",
