@@ -15,7 +15,7 @@ export function getObject(): Object | null {
     writeObjects(objects);
     return object;
   }
-  throw new UserInputError("There are no more free objects.");
+  throw new UserInputError("There are no more freed objects.");
 }
 
 /**
