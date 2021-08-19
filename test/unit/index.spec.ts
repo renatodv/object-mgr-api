@@ -19,12 +19,12 @@ describe("index", () => {
     });
     it("should throw an error when there are no objects", () => {
       mockedReadObjects.mockImplementation(() => []);
-      expect(() => getObject()).toThrow("There are no more free objects.");
+      expect(() => getObject()).toThrow("There are no more freed objects.");
     });
     it("should throw an error when there are no free objects", () => {
       const objects = [{ value: 1, free: false }];
       mockedReadObjects.mockImplementation(() => objects);
-      expect(() => getObject()).toThrow("There are no more free objects.");
+      expect(() => getObject()).toThrow("There are no more freed objects.");
     });
   });
   describe("createObject", () => {
